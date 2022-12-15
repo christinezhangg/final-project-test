@@ -4,8 +4,21 @@ document.getElementById("AbouttheCreatorButton").addEventListener("click", goAbo
 document.getElementById("gobackhome").addEventListener("click", goHome);
 document.getElementById("gobackhomey").addEventListener("click", goHome);
 document.getElementById("gobackhomeyy").addEventListener("click", goHome);
-document.getElementById("clicktosaveadvice").addEventListener("click", save);
-document.getElementById("clicktosaveadvice").addEventListener("click", sendAlert);
+// document.getElementById("clicktosaveadvice").addEventListener("click", sendAlert);
+var clickToSaveAdviceDiv = document.getElementById("clicktosaveadvice");
+clickToSaveAdviceDiv.addEventListener("click", function(e) {
+    var divId = document.getElementById("generatedAdvice");
+    if (divId.innerText == '') {
+        console.log("inif");
+        alert("Please discover new advice before saving");
+    } 
+    else {
+        console.log("inelse");
+        save();
+        sendAlert();
+    }
+  });
+
 var url = "https://api.adviceslip.com/advice";
 var advicee = [];
 
@@ -40,8 +53,7 @@ var xhttp1 = new XMLHttpRequest();
     xhttp1.open("GET", url, true);
     xhttp1.send();
 
-function save(e){
-    e.preventDefault();
+function save(){
     console.log("saved");
     const generatedAdvice = document.getElementById("generatedAdvice");
     const adviceText = generatedAdvice.textContent;
