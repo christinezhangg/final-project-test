@@ -5,6 +5,7 @@ document.getElementById("gobackhome").addEventListener("click", goHome);
 document.getElementById("gobackhomey").addEventListener("click", goHome);
 document.getElementById("gobackhomeyy").addEventListener("click", goHome);
 document.getElementById("clicktosaveadvice").addEventListener("click", save);
+document.getElementById("clicktosaveadvice").addEventListener("click", sendAlert);
 var url = "https://api.adviceslip.com/advice";
 var advicee = [];
 
@@ -49,6 +50,10 @@ function save(e){
     adviceListItem.id = "ali";
     const items = document.getElementById("items");
     items.appendChild(adviceListItem);
+}
+
+function sendAlert(){
+    alert("Your advice has been successfully saved.  View your saved advice to see it!")
 }
 
 function newAdvice(e){
