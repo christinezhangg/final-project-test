@@ -16,6 +16,18 @@ body {
     position: relative;
     font-size: 20pt;
     top: 100px;
+    background-color: white;
+    width: 70%;
+    height: 100px;
+    left: 210px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 10px 10px;
 }
 
 .buttons {
@@ -35,8 +47,16 @@ body {
 }
 
 #SavedAdvicePage {
+    position: relative;
+    justify-content: center;
+    align-content: center;
     text-align: center;
+    align-items: center;
     margin-top: 100px;
+    background-color: white;
+    box-shadow: 10px 10px;
+    width: 50%;
+    left: 350px;
 }
 
 #AboutPage {
@@ -92,24 +112,24 @@ body {
 }
 
 #generatedAdvice {
-    font-size: 17pt;
+    position: relative;
+    font-size: 20pt;
     margin-top: 100px;
     margin-bottom: 100px;
-}
-
-.savedheader{
-    padding: 10px;
-    font-size: 20pt;
-    position: relative;
+    background-color: white;
+    box-shadow: 10px 10px;
     width: 70%;
     left: 210px;
 }
 
+.savedheader{
+    padding-top: 10px;
+    font-size: 20pt;
+}
+
 #items {
-    position:relative;
-    width: 50%;
-    left: 322px;
     font-size: 14pt;
+    background-color: white;
 }
 
 #ali {
