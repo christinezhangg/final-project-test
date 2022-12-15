@@ -4,6 +4,7 @@ document.getElementById("AbouttheCreatorButton").addEventListener("click", goAbo
 document.getElementById("gobackhome").addEventListener("click", goHome);
 document.getElementById("gobackhomey").addEventListener("click", goHome);
 document.getElementById("gobackhomeyy").addEventListener("click", goHome);
+// document.getElementById("clicktosaveadvice").addEventListener("click", save);
 var url = "https://api.adviceslip.com/advice";
 var advicee = [];
 
@@ -11,14 +12,14 @@ document.getElementById("NewAdvicePage").style.display = "none";
 document.getElementById("SavedAdvicePage").style.display = "none";
 document.getElementById("AboutPage").style.display = "none";
 
-function getAdvice(i) {
+function getAdvice() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             var realadvice = JSON.parse(this.responseText);
             advices = realadvice.slip.advice;
             console.log(advices);
-            document.getElementById("quote").innerHTML = advices;
+            document.getElementById("generatedAdvice").innerHTML = advices;
         }
     };
     xhttp.open("GET", url, true);
@@ -32,15 +33,28 @@ var xhttp1 = new XMLHttpRequest();
             advices = realadvice.slip.advice;
             console.log(advices);
             document.getElementById("quote").innerHTML = advices;
+
         }
     };
     xhttp1.open("GET", url, true);
     xhttp1.send();
 
+// function save(e){
+//     e.preventDefault();
+//     advice = document.getElementById("generatedAdvice").innerHTML;
+//     // advicee.push(advice);
+//     console.log(1)
+// }
+
 function newAdvice(e){
     e.preventDefault();
+    console.log("in newAdvice");
 
-    document.getElementById("DiscoverNewAdviceButton").addEventListener("click", getAdvice);
+    var trial = document.getElementById("DiscoverNewAdviceButton");
+    trial.addEventListener("click", getAdvice);
+    console.log("after trial");
+    // document.getElementById("generatedAdvice").innerHTML = wordshaha;
+    console.log("after innerHTML");
 
 
     document.getElementById("homepage").style.display = "none";

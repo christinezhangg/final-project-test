@@ -77,10 +77,16 @@ body {
 #gobackhome {
     position: relative;
     right: 600px;
-    bottom: 100px;
+    bottom: 326px;
 }
 
 #quote {
     font-size: 20pt;
     margin-top: 100px;
+}
+
+#generatedAdvice {
+    font-size: 17pt;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
