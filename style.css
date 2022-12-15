@@ -63,21 +63,21 @@ body {
 }
 
 #gobackhomeyy {
-    position: relative;
-    right: 600px;
-    bottom: 525px;
+    position: fixed;
+    left: 60px;
+    top: 40px;
 }
 
 #gobackhomey {
-    position: relative;
-    right: 600px;
-    bottom: 91.5px;
+    position: fixed;
+    left: 60px;
+    top: 40px;
 }
 
 #gobackhome {
-    position: relative;
-    right: 600px;
-    bottom: 326px;
+    position: fixed;
+    left: 60px;
+    top: 40px;
 }
 
 #quote {
@@ -89,4 +89,22 @@ body {
     font-size: 17pt;
     margin-top: 100px;
     margin-bottom: 100px;
+}
+
+.savedheader{
+    padding: 10px;
+    font-size: 20pt;
+    position: relative;
+    width: 70%;
+    left: 210px;
+}
+
+#items {
+    position:relative;
+    width: 50%;
+    left: 325px;
+}
+
+#ali {
+    padding-bottom: 10px;
 }

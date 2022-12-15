@@ -4,7 +4,7 @@ document.getElementById("AbouttheCreatorButton").addEventListener("click", goAbo
 document.getElementById("gobackhome").addEventListener("click", goHome);
 document.getElementById("gobackhomey").addEventListener("click", goHome);
 document.getElementById("gobackhomeyy").addEventListener("click", goHome);
-// document.getElementById("clicktosaveadvice").addEventListener("click", save);
+document.getElementById("clicktosaveadvice").addEventListener("click", save);
 var url = "https://api.adviceslip.com/advice";
 var advicee = [];
 
@@ -39,12 +39,17 @@ var xhttp1 = new XMLHttpRequest();
     xhttp1.open("GET", url, true);
     xhttp1.send();
 
-// function save(e){
-//     e.preventDefault();
-//     advice = document.getElementById("generatedAdvice").innerHTML;
-//     // advicee.push(advice);
-//     console.log(1)
-// }
+function save(e){
+    e.preventDefault();
+    console.log("saved");
+    const generatedAdvice = document.getElementById("generatedAdvice");
+    const adviceText = generatedAdvice.textContent;
+    const adviceListItem = document.createElement("li");
+    adviceListItem.textContent = adviceText;
+    adviceListItem.id = "ali";
+    const items = document.getElementById("items");
+    items.appendChild(adviceListItem);
+}
 
 function newAdvice(e){
     e.preventDefault();
