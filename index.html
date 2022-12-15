@@ -1,1 +1,68 @@
-
+<!doctype html>
+<html>
+    <head>
+        <link href = "style.css" type="text/css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name = "description" content = "A website that randomly generates advice for its users.">
+        <title>CSE 204A - Assignment 10 Final Project</title>
+        <!-- Show off what I've learned from this class by using HTML/CSS/JS/API calls to create a fully functioning website. -->
+    </head>
+    <body>
+        <div id = "entirescreen">
+            <div id = "homepage">
+                <div class = "header">
+                    <strong>Christine's Crazy Advice</strong>
+                </div>
+                <div class = "AOTD">
+                    <strong>Advice of the Day!</strong>
+                    <div id = "quote">
+                        <!-- Empty div to insert AOTD into??? I hope that works -->
+                    </div>
+                </div>
+            </div>
+            <div class = "buttons">
+                <button id = "NewAdviceButton">Get New Advice</button>
+                <button id = "ViewSavedAdviceButton">View Your Saved Advice</button>
+                <button id = "AbouttheCreatorButton">About This Platform</button>
+            </div>
+            <div id = "NewAdvicePage">
+                <button id = "DiscoverNewAdviceButton">Discover New Advice</button>
+                <div id ="generatedAdvice">
+                    <!-- Empty div to insert advice into??? I hope that works -->
+                </div>
+                <button id = "clicktosaveadvice">Save Advice</button>
+                <div class = "success">
+                    <!-- Empty div to insert success message into??? I hope that works -->
+                </div>
+                <button id = "gobackhome">Go Back to Home</button>
+            </div>
+            <div id = "SavedAdvicePage">
+                <div class = "savedheader">
+                    <strong>Your Saved Advice</strong>
+                </div>
+                <div class = "list">
+                    <ol id = "items">
+    
+                    </ol>
+                </div>
+                <button id = "gobackhomey">Go Back to Home</button>
+            </div>
+            <div id = "AboutPage">
+                <div class = "aboutheader">
+                    <strong>Welcome to Christine's Crazy Advice!  This platforms purpose is to provide you with messages of encouragement and suggestions for any situation you may be in.  Enjoy!</strong>
+                </div>
+                <div class = "secondheader">
+                    <strong>Meet this platform's creator: Christine Zhang</strong>
+                </div>
+                <div class = "image">
+                    <img id = "me" src = "images/Christine Zhang.png" alt = "cz">
+                </div>
+                <div class = "caption">
+                    <span>She's a senior at Washington University in St. Louis studying as a part of the Business and Computer Science Joint Degree Program with a minor in Mathematics.</span>
+                </div>
+                <button id = "gobackhomeyy">Go Back to Home</button>
+            </div>
+        </div>
+        <script src = "script.js"></script>
+    </body>
+</html>

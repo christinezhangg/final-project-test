@@ -1,1 +1,86 @@
+body {
+    background-color: lightblue;
+}
 
+#homepage {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.header {
+    font-size: 20pt;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    position: fixed;
+    top: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 250px;
+}
+
+#NewAdvicePage {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#SavedAdvicePage {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#AboutPage {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#me {
+    height: 300px;
+    width: auto;
+    padding: 10px;
+}
+
+.aboutheader{
+    padding: 10px;
+    font-size: 20pt;
+    position: relative;
+    width: 70%;
+    left: 210px;
+}
+
+.secondheader {
+    font-size: 17pt;
+}
+
+.caption {
+    position: relative;
+    width: 50%;
+    left: 350px;
+}
+
+#gobackhomeyy {
+    position: relative;
+    right: 600px;
+    bottom: 525px;
+}
+
+#gobackhomey {
+    position: relative;
+    right: 600px;
+    bottom: 91.5px;
+}
+
+#gobackhome {
+    position: relative;
+    right: 600px;
+    bottom: 100px;
+}
+
+#quote {
+    font-size: 20pt;
+    margin-top: 100px;
+}
